@@ -17,10 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from world import views
 from django.conf.urls import include
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'', include('world.urls')),
     # path('', include('pwa.urls')),  # You MUST use an empty string as the URL prefix
+
+
+    path('abudhabi/', auth_views.LoginView.as_view(
+            template_name='abudhabi.html',
+        ), name='abudhabi'),
 ]

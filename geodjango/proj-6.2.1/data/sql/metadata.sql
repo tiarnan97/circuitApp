@@ -1,2 +1,0 @@
-INSERT INTO "metadata" VALUES('EPSG.VERSION', 'v9.8.2');
-INSERT INTO "metadata" VALUES('EPSG.DATE', '2019-09-23');

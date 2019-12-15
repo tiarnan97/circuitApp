@@ -62,7 +62,7 @@ ROOT_URLCONF = 'geodjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['world/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

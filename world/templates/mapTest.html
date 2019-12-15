@@ -5,7 +5,8 @@
 
     {% load static %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
 
     <title>Circuit Finder</title>
 
@@ -17,29 +18,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="{% static 'scripts/sidebar.js' %}"></script>
 
-<link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style/leaflet-routing-machine.css' %}">
 
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 
 
 <body>
 
-<div id="mySidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+<div id="mySidebar"> {#The list of circuits for the sidebar#}
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="abudhabi.html">Abu Dhabi, United Arab Emirates : Yas Marina Circuit </a>
+    <a href="usa.html">Austin, United States : Circuit of the Americas</a>
+    <a href="azerbaijan.html">Baku, Azerbaijan: Baku City Circuit</a>
+    <a href="germany.html">Hockenheim, Germany : Hockenheimring</a>
+    <a href="france.html">Le Castellet, France : Circuit Paul Ricard</a>
+    <a href="australia.html">Melbourne, Australia : Melbourne Grand Prix Circuit</a>
+    <a href="mexico.html">Mexico City, Mexico : Autódromo Hermanos Rodríguez</a>
+    <a href="hungary.html">Mogyoród, Hungary : Hungaroring</a>
+    <a href="monaco.html">Monte Carlo, Monaco : Circuit de Monaco</a>
+    <a href="spain.html">Montmeló, Spain : Circuit de Barcelona-Catalunya</a>
+    <a href="canada.html">Montreal, Canada : Circuit Gilles Villeneuvedagger</a>
+    <a href="italy.html">Monza, Italy : Autodromo Nazionale Monzadagger</a>
+
 </div>
 
 <div id="main">
-  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+    <button class="openbtn" onclick="openNav()">&#9776; Circuit List</button>
 </div>
 
 <div id="mapid">
+
 </div>
 
 <script crossorigin=""
@@ -56,7 +70,7 @@
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox/streets-v11',
-        accessToken: 'pk.eyJ1IjoidGVhcm5hd24iLCJhIjoiY2sybHhjam55MGF3bTNtbG5xamMybXpqcSJ9.yTHJ13Xc3WGcbj4zGM6VyQ'
+        accessToken: 'pk.eyJ1IjoidGVhcm5hd24iLCJhIjoiY2s0NG1sNXJ4MDBhdDNtcGdtb3V6aXZvNiJ9.Z2eTqz5hx840d4YVPTtENQ'
     }).addTo(mymap);
 
     $.getJSON("{% static 'features.geojson' %}", function (data) {
@@ -89,7 +103,7 @@
                     L.latLng(pos.coords.latitude, pos.coords.longitude)
                 ],
                 routeWhileDragging: true
-             }).addTo(mymap);
+            }).addTo(mymap);
 
         });
     }
@@ -99,4 +113,88 @@
 
 
 </body>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    #mapid {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    /* The sidebar menu */
+    #mySidebar {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */ /* Stay in place */
+        position: absolute;
+        z-index: 1; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    }
+
+    /* The sidebar links */
+    #mySidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    #mySidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    /* Position and style the close button (top right corner) */
+    #mySidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    /* The button used to open the sidebar */
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s; /* If you want a transition effect */
+        padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
+            padding-top: 15px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+    }
+</style>
 </html>

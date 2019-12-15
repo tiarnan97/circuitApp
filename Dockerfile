@@ -1,7 +1,7 @@
 # Start with  basic Ubuntu image
 FROM ubuntu:18.04
 
-MAINTAINER Mark Foley
+MAINTAINER Tiarnan McGurk
 
 # Install everything that you need exept libraries specific to your Django project - these come later.
 RUN apt-get -y update && apt-get -y upgrade && apt-get -y install python3 python3-dev python3-setuptools python3-pip libgdal-dev nginx supervisor
