@@ -9,7 +9,7 @@ version: '3'
 
 services:
   app:
-    image: tearnawn/webmapping2019
+    image: tearnawn/circuitapp
     restart: unless-stopped
 
     # Mount directories from the host which contain SSL cert info

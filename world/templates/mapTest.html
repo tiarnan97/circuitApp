@@ -33,7 +33,7 @@
 <div id="mySidebar"> {#The list of circuits for the sidebar#}
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <a href="abudhabi.html">Abu Dhabi, United Arab Emirates : Yas Marina Circuit </a>
+    <a href="abuDhabi.html">Abu Dhabi, United Arab Emirates : Yas Marina Circuit </a>
     <a href="usa.html">Austin, United States : Circuit of the Americas</a>
     <a href="azerbaijan.html">Baku, Azerbaijan: Baku City Circuit</a>
     <a href="germany.html">Hockenheim, Germany : Hockenheimring</a>
@@ -78,7 +78,7 @@
         var datalayer = L.geoJson(data, {
             onEachFeature: function (feature, featureLayer) {
                 featureLayer.bindPopup("<dl></dt>" + "<dd>" + feature.properties.Name + "</dd>"
-                    + "<dd>" + feature.properties.description + "</dd>");
+                    + "<dd>" + feature.properties.description + "</dd>"+ "<dd>");
             }
         }).addTo(mymap);
         mymap.fitBounds(datalayer.getBounds());

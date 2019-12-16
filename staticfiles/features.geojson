@@ -4,7 +4,8 @@
       "type": "Feature",
       "properties": {
         "Name": "F1 Australian GP - Melbourne GP Circuit",
-        "description": "Click here for more"
+        "description": "Click here for more",
+        "URL": "world/templates/australia.html"
       },
       "geometry": {
         "coordinates": [

@@ -1,93 +1,176 @@
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-		<title>Yas Marina Circuit</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-	</head>
-	<body>
+<head>
+    <title>Yas Marina Circuit</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
 {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}">
-		<!-- Header -->
-			<header id="header">
+<link rel="stylesheet" type="text/css" href="{% static 'style/main.css' %}">
+<!-- Header -->
+<header id="header">
 
-				<a href="abuDhabi.html" class="logo">Yas Marina Circuit</a>
-
-
-			</header>
+    <a href="abuDhabi.html" class="logo">Yas Marina Circuit</a>
 
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-                    <style>
-                        #banner {
-                            background-image: url(../../static/images/yasMarinaRenault.jpg);
-                        }
-                    </style>
-				</div>
-			</section>
+</header>
 
-		<!-- One -->
-			<section id="one" class="wrapper">
-				<div class="inner flex flex-3">
-					<div class="flex-item left">
-						<div>
-							<h3>Number of Laps</h3>
-							<p>Morbi in sem quis dui plalorem ipsum<br /> euismod in, pharetra sed ultricies.</p>
-						</div>
-						<div>
-							<h3>Circuit Lap Record</h3>
-							<p>Tristique yonve cursus jam nulla quam<br /> loreipsu gravida adipiscing lorem</p>
-						</div>
-					</div>
-					<div class="flex-item image fit round">
-						<img src="../../static/images/yasMarinaHamilton.jpg" alt="AbuDhabi Hamilton" id = "abudhabiHamilton">
-					</div>
-					<div class="flex-item right">
-						<div>
-							<h3>Previous Winners</h3>
-							<p>Sed adipiscing ornare risus. Morbi estes<br /> blandit sit et amet, sagittis magna.</p>
-						</div>
-						<div>
-							<h3>Most Wins</h3>
-                            <p>Constructor:</p>
-                            <p>Driver: </p>
-						</div>
-					</div>
-				</div>
-			</section>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style1 special">
-				<div class="inner">
-					<h2>About the circuit</h2>
-					    <p>
-					        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra<br /> magna etiam lorem ultricies in diam. Sed arcu cras consequat.
-                        </p>
-					    <footer>
+<!-- Banner -->
+<section id="banner">
+    <div class="content">
+        <style>
+            #banner {
+                background-image: url(../../static/images/yasMarinaRenault.jpg);
+            }
+        </style>
+    </div>
+</section>
 
-					    </footer>
-                </div>
-			</section>
 
-		<!-- Three -->
-			<section id="three" class="wrapper">
-				<div class="inner flex flex-3">
-					<div class="flex-item box">
-						<div class="image fit">
-							<img src="../../static/images/yasMarina.png" alt="Circuit" id = "yasMarinaCircuit">
-						</div>
-						<div class="content">
-							<h3>Circuit Layout</h3>
-							<p>Placerat ornare. Pellentesque od sed euismod in, pharetra ltricies edarcu cas consequat.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+<!-- One -->
+<section id="one" class="wrapper">
+    <div class="inner flex flex-3">
+        <div class="flex-item left">
+            <div>
+                <h3>Number of Laps</h3>
+                <p>55 Laps<br/>5.554 km (3.451 mi)/Lap</p>
+            </div>
+            <div>
+                <h3>Circuit Lap Record</h3>
+                <p>1:36.169 Charles Leclerc (2019) </p>
+            </div>
+        </div>
+        <div class="flex-item image fit round">
+            <img src="../../static/images/yasMarinaHamilton.jpg" alt="AbuDhabi Hamilton" id="abudhabiHamilton">
+        </div>
+        <div class="flex-item right">
+            <div>
+                <h3>Recent Winners</h3>
+                <p>
+                <table style="width: 204px;">
+                    <tbody>
+                    <tr>
+                        <td style="width: 43px;">Year&nbsp;</td>
+                        <td style="width: 210px;">Driver&nbsp;</td>
+                        <td style="width: 10px;">Constructor&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">&nbsp;2009</td>
+                        <td style="width: 210px;">&nbsp;Sebastian Vettel</td>
+                        <td style="width: 10px;">&nbsp;Red Bull-Renault</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2010&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Sebastian Vettel</td>
+                        <td style="width: 10px;">Red Bull-Renault&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2011&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Lewis Hamilton</td>
+                        <td style="width: 10px;">&nbsp;McLaren-Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2012&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Kimi Raikkonen</td>
+                        <td style="width: 10px;">Lotus-Renault&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2013&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Sebastian Vettel</td>
+                        <td style="width: 10px;">&nbsp;Red Bull-Renault</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2014</td>
+                        <td style="width: 210px;">&nbsp;Lewis Hamilton</td>
+                        <td style="width: 10px;">&nbsp;Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2015</td>
+                        <td style="width: 210px;">&nbsp;Nico Rosberg</td>
+                        <td style="width: 10px;">&nbsp;Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2016</td>
+                        <td style="width: 210px;">&nbsp;Lewis Hamilton</td>
+                        <td style="width: 10px;">&nbsp;Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2017&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Valtteri Bottas</td>
+                        <td style="width: 10px;">Mercedes&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2018&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Lewis Hamilton</td>
+                        <td style="width: 10px;">&nbsp;Mercedes</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 43px;">2019&nbsp;</td>
+                        <td style="width: 210px;">&nbsp;Lewis Hamilton</td>
+                        <td style="width: 10px;">&nbsp;Mercedes</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                </p>
+            </div>
+            <div>
+                <h3>Most Wins</h3>
+                <p>Constructor: Mercedes (6)</p>
+                <p>Driver: Lewis Hamilton (5)</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- Scripts -->
-			 <script src="{% static 'scripts/jquery.min.js' %}"></script>
+<!-- Two -->
+<section id="two" class="wrapper style1 special">
+    <div class="inner">
+        <h2>About the circuit</h2>
+        <p>
+           <p>
+            In 2006, planning went underway to develop a circuit on Yas Island, to the east of Abu Dhabi. In 2007
+            construction began on the 5.5km racetrack with it being completed in October of 2009.
+    </p> <p>
+            The inaugural race was held in 2009 with Sebastian Vettel taking first place, followed by teammate Mark
+            Webber with the previous years’ champion; Jensen Button close behind.
+    </p><p>
+            The circuit however, is more than just a measly racetrack. Its original plan was to turn the whole of Yas
+            Island into a tourist attraction. After 11 years and over $40 billion later, the track is now home to seven
+            hotels, a mall, water park, a golf course, a beach, concert arena and Ferrari’s very own indoor theme park.
+    </p>
+        </p>
+        <footer>
 
-	</body>
+        </footer>
+    </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper">
+    <div class="inner flex flex-3">
+        <div class="flex-item box">
+            <div class="image fit">
+                <img src="../../static/images/yasMarina.png" alt="Circuit" id="yasMarinaCircuit">
+
+            </div>
+            <div class="content">
+                <h3>Circuit Layout</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- Scripts -->
+<script src="{% static 'scripts/jquery.min.js' %}"></script>
+
+</body>
 </html>

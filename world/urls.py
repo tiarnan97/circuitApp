@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns =[
     url(r'^$', HomePageView.as_view(), name = 'home'),
-    url(r'^abudhabi.html/$', views.abudhabi),
+    url(r'^abuDhabi.html/$', views.abudhabi),
     url(r'^australia.html/$', views.australia),
     url(r'^azerbaijan.html/$', views.azerbaijan),
     url(r'^canada.html/$', views.canada),
